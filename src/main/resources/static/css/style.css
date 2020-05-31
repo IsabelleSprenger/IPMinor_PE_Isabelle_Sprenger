@@ -1,0 +1,292 @@
+/* MOBILE FIRST */
+
+html{
+    width: 100%;
+    background:linear-gradient(to bottom, #ffffff, #ffb6c1)  fixed;
+    font-family: "American Typewriter", Verdana, sans-serif;
+    height: 100%;
+    margin: auto;
+}
+
+    /* Inhoud */
+
+main{
+    padding: 1em 1em 0 1em;
+}
+
+h2{
+    font-size: 1.5rem;
+    margin-bottom: 1em;
+}
+
+p{
+    font-size: 1rem;
+    line-height: 2em;
+}
+
+footer p{
+    position: fixed;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #ffffff;
+    text-align: center;
+    background-color: #000000;
+    font-size: 0.8rem;
+    height: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+}
+
+    /* Navigatie */
+
+nav {
+    display: block;
+    overflow: visible;
+    background-color: #000000;
+    width: 100%;
+    table-layout: fixed;
+}
+
+header ul {
+    list-style-type: none;
+    border-style: dotted;
+    border-width: 5px;
+}
+
+nav a{
+    font-weight: normal;
+}
+
+li {
+    text-align: center;
+    margin: 1em 0 1em 0;
+}
+
+li a {
+
+    font-size: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    padding: 0 1em 0 1em; /* grote text block*/
+    background-color: #d3d3d3;
+    border-style: dotted;
+    border-width: 2px;
+}
+
+li a:hover {
+    background-color: #FF1493;
+    color: #000000;
+
+}
+
+li a.current_link{
+    background-color: #ffb6c1;
+}
+
+    /* Afbeeldingen */
+
+.logo {
+    width: 100%;
+    margin-bottom: -0.3em;
+}
+
+.photo {
+    width: 80%;
+    display: block;
+    margin: 1em auto 5em auto;
+}
+
+#life{
+    margin-top: 0;
+}
+
+    /* Forum */
+
+form {
+    width: 100%;
+    text-align: center;
+}
+
+label {
+    clear: both;
+    float: left;
+    margin-right: 3em;
+}
+
+input[type=submit] {
+    background-color: #FF1493;
+    color: #ffffff;
+    padding: 0.5em 1em 0.5em 1em;
+    border-color: #000000;
+    border-style: solid;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 3em;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+input[type=submit]:hover {
+    background-color: #d3d3d3;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 3px;
+    box-sizing: border-box;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    resize: vertical;
+    font-size: 1em;
+}
+
+.button {
+    margin: auto 3em;
+}
+
+    /* Tabellen */
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+th, td{
+    text-align: center;
+    height: 3em;
+}
+
+th {
+    font-weight: bold;
+    width: 100%;
+}
+
+tr {
+    width: 100%;
+    font-size: 0.8em;
+}
+
+td{
+    vertical-align: middle;
+    margin: 0 10px;
+
+}
+
+td a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #ff1493;
+    width: 100%;
+}
+
+tr:nth-child(even){
+    background-color: #ffb6c1;
+}
+
+/* GROOT SCHERM (tablet) */
+
+@media only screen and (min-width: 600px) {
+
+
+        /* Inhoud */
+
+    main{
+        padding: 1em 1em 0 1em;
+    }
+
+    h2{
+        font-size: 2rem;
+        margin-bottom: 1em;
+    }
+
+    p{
+        font-size: 1.2rem;
+        line-height: 2em;
+    }
+
+    footer p{
+        font-size: 1rem;
+
+    }
+
+        /* Navigatie */
+
+    header ul {
+        display: flex;
+        justify-content: space-evenly;
+        border-style: dotted;
+    }
+
+    li a {
+
+        font-size: 1.5rem;
+        border-width: 4px;
+    }
+
+
+        /* Forum */
+
+    form {
+        width: 100%;
+        display: grid;
+    }
+
+    label {
+        width: 100%;
+        clear: both;
+        float: left;
+        margin-right: 3em;
+    }
+
+    input[type=submit] {
+        width:fit-content;
+    }
+
+        /* Tabel */
+
+    tr {
+        font-size: 1em;
+    }
+
+
+
+}
+
+/* GROOT SCHERM (desktop/tv)*/
+
+@media only screen and (min-width: 900px) {
+
+    html{
+        width: 80%;
+    }
+
+
+    /* Forum */
+
+    form {
+        width: 70%;
+        display: grid;
+    }
+
+    label {
+        width: 30%;
+    }
+
+    input[type=text], select {
+        width: 60%;
+        float: left;
+    }
+
+    input[type=submit] {
+        float: right;
+    }
+}
